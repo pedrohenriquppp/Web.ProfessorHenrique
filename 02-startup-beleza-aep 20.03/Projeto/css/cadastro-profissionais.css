@@ -1,0 +1,76 @@
+body{
+    background-color: #4ABDAC;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.box {
+    width: 30%;
+    height: 75%;
+    background: #fff;
+}
+
+form{
+    width: 80%;
+   
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section input{
+    height: 20px;
+    width: 10vw;
+}
+
+h2{
+    justify-content: center;
+    display: flex;
+}
+
+.botao{
+    background-color: #0085FF;
+    top: 15px;
+    height: fit-content;
+    position: relative;
+    border-radius: 5px;
+}
+.refser{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cancelar, .salvar{
+    background-color: green;
+    top: 15px;
+    height: 25px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cansal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cancelar{
+    background-color: red;
+}

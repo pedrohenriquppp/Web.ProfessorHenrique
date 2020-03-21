@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro Profissionais</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/cadastro-profissionais.css'>
+</head>
+<body class="container">
+
+    <main class="box">
+        <h1>Cadastro Profissionais</h1>
+        <form>
+            <h2>Dados pessoais</h2>
+            <fieldset>
+                <section>
+                    <div>
+                        <p>NOME</p>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <p>SOBRENOME</p>
+                        <input type="text" />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>TEL. PARTICULAR</p>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <p>TEL. COMERCIAL</p>
+                        <input type="text" />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>E-MAIL</p>
+                        <input type="text" />
+                    </div>
+                </section>
+            </fieldset>
+            <section class="refser">
+                <p>REFERÊNCIAS:</p>
+                <u class="botao">anexar</u>
+                <P>SERVIÇO(S):</P>
+                <select class="botao">
+                    <optgroup label="Cabelo">
+                      <option>mega hair</option>
+                      <option>alizamento</option>
+                      <option>escova</option>
+                    </optgroup>
+                    <optgroup label="Rosto">
+                      <option>mascara</option>
+                      <option>masagem</option>
+                      <option>esfoliante</option>
+                    </optgroup>
+                  </select>
+            </section>
+            <section class="cansal">
+                <u class="cancelar">Cancelar</u>
+                <u class="salvar" onClick="redirecionar()">Salvar</u>
+            </section>
+        </form>
+    </main>
+    
+</body>
+</html>
+
+<script>
+    function redirecionar(){
+        var validado = true;
+        var fieldset = document.querySelector("fieldset");
+        var inputs = fieldset.querySelectorAll("input");
+        inputs.forEach(function(input){
+            if(!input.value){
+                validado = false;
+            }
+        });
+        if(validado){
+            window.location.href = "cadastro-local.html"; 
+        }else{
+            alert('Possui campo(s) vazio(s)');
+        }
+    }
+</script>

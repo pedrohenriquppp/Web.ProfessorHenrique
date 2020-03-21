@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastro Profissionais</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/cadastro-local.css'>
+</head>
+<body class="container">
+
+    <main class="box">
+        <h1>Cadastro do Local</h1>
+        <form>
+            <h2>Endereço</h2>
+            <fieldset>
+                <section>
+                    <div>
+                        <p>CEP</p>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <p>ENDEREÇO</p>
+                        <input type="text" />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>CIDADE</p>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <p>BAIRRO</p>
+                        <input type="text" />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>LOGRADOURO</p>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <p>COMPLEMENTO</p>
+                        <input type="text" />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>N°</p>
+                        <input type="text" />
+                    </div>
+                </section>
+            </fieldset>
+            <section class="cansal">
+                <u class="cancelar" onClick="redirecionar()">Cancelar</u>
+                <u class="salvar">Salvar</u>
+            </section>
+        </form>
+    </main>
+    
+</body>
+</html>
+
+<script>
+    function redirecionar(){
+        window.location.href = "cadastro-profissionais.html"; 
+    }
+</script>
